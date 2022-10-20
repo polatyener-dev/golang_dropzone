@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File Upload</title>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+     <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <h1>Örnek Dosya Yükleme</h1>
+    </header>
+    <section>
+    <form action="/upload"
+      class="dropzone"
+      id="dropzone-upload"></form>
+    </section>
+    <footer>
+        <script>
+            const dropzone = new Dropzone("#dropzone-upload", { url: "/upload" });
+          </script>
+    </footer>
+</body>
+
+</html>
