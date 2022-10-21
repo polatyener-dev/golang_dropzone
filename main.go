@@ -18,9 +18,9 @@ func main() {
 	err := http.ListenAndServe(":2222", nil)
 
 	if errors.Is(err, http.ErrServerClosed) {
-		fmt.Printf("server kapatıldı\n")
+		fmt.Printf("Server kapatıldı\n")
 	} else if err != nil {
-		fmt.Printf("bir hata oluştu: %s\n", err)
+		fmt.Printf("Bir hata oluştu: %s\n", err)
 		os.Exit(1)
 	}
 }
